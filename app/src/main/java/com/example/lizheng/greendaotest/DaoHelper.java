@@ -3,6 +3,9 @@ package com.example.lizheng.greendaotest;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
+import org.greenrobot.greendao.query.Join;
+import org.greenrobot.greendao.query.QueryBuilder;
+
 import java.util.List;
 
 /**
@@ -76,5 +79,6 @@ public class DaoHelper {
      */
     public static List<Shop> queryAll() {
         return daoSession.getShopDao().loadAll();
+
     }
 }
